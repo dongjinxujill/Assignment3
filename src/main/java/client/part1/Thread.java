@@ -68,7 +68,6 @@ public class Thread extends java.lang.Thread implements Runnable {
           }
           countReq();
           long latency = System.currentTimeMillis() - start;
-//          System.out.println(req);
           records.add(new Record(start, "POST", latency, api.getStatusCode()));
           if (api.getStatusCode() / 100 == 2) {
             countRes();

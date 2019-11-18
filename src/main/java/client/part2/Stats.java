@@ -36,7 +36,6 @@ public class Stats {
 
   public void performanceStats() {
     writeToCSV();
-//    System.out.println("stats of threads 1024:" );
     System.out.println("=========================================");
     System.out.println("Total number of requests sent: " + requestCount);
     System.out.println("Total number of successful responses: " + responseCount);
